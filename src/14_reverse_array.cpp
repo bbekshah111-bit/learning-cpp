@@ -13,23 +13,22 @@ void printArray(int array[], int size)
 }
 
 
-void reverse_array(int array[], int size)
+void reverseArray(int array[], int size)
 {
     int right = size - 1;
     int left = 0;
 
-    int conatiner;
+    int container;
 
     while (left < right)
     {
-        conatiner = array[right];
+        container = array[right];
 
         array[right] = array[left];
         right--;
 
-        array[left] = conatiner;
+        array[left] = container;
         left++;
-
 
 
     }
@@ -45,8 +44,8 @@ int main()
     cout << endl;
     int arr2[6] = {1, 2, 3, 4, 5, 6};
 
-    reverse_array(arr1, 5);
-    reverse_array(arr2, 6);
+    reverseArray(arr1, 5);
+    reverseArray(arr2, 6);
 
     return 0;
 }
