@@ -16,18 +16,16 @@ int removeDuplicate(int array[], int size)
 {
 
     int slow = 0;
-    int fast = 1;
 
 
     for (int i=1; i<=size-1; i++)
     {
-        if (array[slow] != array[fast])
+        if (array[slow] != array[i])
         {
             slow++;
-            array[slow] = array[fast];
+            array[slow] = array[i];
         }
 
-        fast++;
     }
 
     printArray(array, size);
