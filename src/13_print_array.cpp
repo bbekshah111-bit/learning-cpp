@@ -1,0 +1,18 @@
+#include<iostream>
+
+using namespace std;
+
+void printArray(int array[])
+{
+    for (int i=0; i<5; i++)
+    {
+        cout << array[i] << endl;
+    }
+}
+
+int main()
+{
+    int array[5] = {1, 2, 3, 4, 5};
+    printArray(array);
+    return 0;
+}
