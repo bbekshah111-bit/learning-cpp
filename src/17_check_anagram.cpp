@@ -22,7 +22,7 @@ bool isAnagram(string s1, string s2)
         freq[s2[i] - 'a']--;
     }
 
-    for (int i=0; i<size; i++)
+    for (int i=0; i<26; i++)
     {
         if (freq[i] != 0)
         {
@@ -47,6 +47,10 @@ int main()
     string s7 = "three";
     string s8 = "there";
 
+    string s9 = "cc";
+    string s10 = "cd";
+
+
     cout << isAnagram(s1, s2);
     cout << endl;
     cout << isAnagram(s3, s4);
@@ -54,5 +58,8 @@ int main()
     cout << isAnagram(s5, s6);
     cout << endl;
     cout << isAnagram(s7, s8);
+    cout << endl;
+    cout << isAnagram(s9, s10);
+
     return 0; 
 }
